@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlines — Lecture 2 Starter</title>
+  <!-- Link the reset and style .css files -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       LARGE STICKY HEADER
+       Required: must remain visible while the user scrolls.
+       ============================================================ -->
+  <header>
+
+    <div class="brand">
+      <h1>Wanderlines</h1>
+      <p class="tagline">A travel blog about how you get there.</p>
+    </div>
+    <nav>
+      <a href="#gallery-grid">Grid Gallery</a>
+      <a href="#gallery-flex">Flex Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — Photo gallery, styled with display: grid + minmax()
+         At least 10 cards. Each card = image + heading + description.
+         ============================================================ -->
+    <section id="grid-gallery">
+      <header>
+        <h2>Ireland — Grid Gallery</h2>
+        <p>Style this <code>.grid</code> with <strong>display: grid</strong> and
+        <code>repeat(auto-fill, minmax(220px, 1fr))</code> in styles.css.</p>
+      </header>
+
+      <div class="grid">
+        <figure>
+          <img src="IMG_1277.jpeg"
+               alt="Irish Hounds">
+          <figcaption>Irish Hounds</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1283.jpeg"
+               alt="A cloudy day in Dublin.">
+          <figcaption>Phoenix Park</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1291.jpeg"
+               alt="Detroit style pizza from Doom Slice.">
+          <figcaption>Detroit Style Pizza</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1296.jpeg"class="mask1"
+               alt="The famous Temple Bar.">
+          <figcaption>Temple Bar</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1298.jpeg"
+               alt="A Pint of Guinness at Grogan's.">
+          <figcaption>A Pint of Guinness at Grogan's</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1307.jpeg"class="mask2"
+               alt="The River">
+          <figcaption>River Liffey</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1315.jpeg"
+               alt="German doner kebab">
+          <figcaption>German Doner Kebab</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1318.jpeg"
+               alt="A fluffy dog">
+          <figcaption>A Fluffy Dog</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1320.jpeg"
+               alt="My order at the chippy">
+          <figcaption>My Order At The Chippy</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_1332.jpeg"
+               alt="A pint of Smithwicks at Hogan's">
+          <figcaption>A pint of Smithwick's</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/kilkenny/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Kilkenny</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — Photo gallery, styled with display: flex
+         At least 10 cards. Same content shape; different layout.
+         ============================================================ -->
+    <section id="flex-gallery">
+      <header>
+        <h2>Food & Drink — Flex Gallery</h2>
+        <p>Style this <code>.flex</code> with <strong>display: flex</strong>,
+        <code>flex-wrap: wrap</code>, and <code>flex: 1 0 250px; </code> on the figures.</p>
+      </header>
+
+      <div class="flex">
+        <figure>
+          <img src="https://picsum.photos/seed/breakfast/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Full Irish breakfast</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/pub/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Pub in Temple Bar</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/seafood/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Seafood chowder</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/scones/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Cream tea</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/whiskey/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Distillery tour</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/coffee/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Morning coffee</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/farmers/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Farmers market</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/cheese/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Local cheese plate</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/stew/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Beef and Guinness stew</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/bread/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Soda bread</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/dessert/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Apple tart</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/pint/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>The perfect pint</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About this site</h2>
+      <p>This is a class assignment. Replace this paragraph with a short blurb
+      about your trip and what kind of accessibility considerations you put into
+      the design.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Colleen van Lent; Built for Accessible Web Design Lecture 2</p>
+  </footer>
+
+</body>
+</html>
